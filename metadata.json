@@ -1,0 +1,6 @@
+{
+  "name": "AI Career Advisor",
+  "description": "An AI-powered career advisor that provides tailored career suggestions and detailed plans based on user's country and field of interest.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

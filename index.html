@@ -6,6 +6,7 @@
   <title>Abdullah's Career Advisor</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    @import url('https://rsms.me/inter/inter.css');
     /* For custom scrollbar, if desired, though Tailwind primarily handles styling */
     ::-webkit-scrollbar {
       width: 8px;
@@ -23,39 +24,15 @@
     body {
       font-family: 'Inter', sans-serif; /* Using a common modern font, ensure Tailwind config or CDN includes it if not default */
     }
-    @import url('https://rsms.me/inter/inter.css');
     html { font-family: 'Inter', sans-serif; }
     @supports (font-variation-settings: normal) {
       html { font-family: 'Inter var', sans-serif; }
     }
   </style>
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@18.2.0",
-    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
-    "react-dom": "https://esm.sh/react-dom@18.2.0",
-    "react/": "https://esm.sh/react@18.2.0/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.2.0",
-    "@/components/icons": "./components/icons.tsx",
-    "react-dom/": "https://esm.sh/react-dom@18.2.0/"
-  }
-}
-</script>
-  <!-- Add Babel Standalone for in-browser TSX/JSX transpilation -->
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-slate-50 text-slate-800">
   <div id="root"></div>
-  <!--
-    Modified script tag for Babel:
-    - type="text/babel": Tells Babel to process this script.
-    - data-presets="env,react,typescript": Instructs Babel to use presets for general JS compatibility, React (JSX), and TypeScript.
-    - src="index.tsx": Relative path to your main TSX file.
-    Removed data-type="module" as Babel's presets should handle module syntax.
-  -->
-  <script type="text/babel" data-presets="env,react,typescript" src="index.tsx"></script>
-<script type="module" src="/index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
